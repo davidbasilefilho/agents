@@ -2,7 +2,7 @@
 
 ## The Button Label Problem
 
-**Never use "OK", "Submit", or "Yes/No".** These are lazy and ambiguous. Use specific verb + object patterns:
+**Never use "OK", "Submit", or "Yes and No".** These are lazy and ambiguous. Use specific verb plus object patterns:
 
 | Bad | Good | Why |
 |-----|------|-----|
@@ -18,19 +18,19 @@
 
 ## Error Messages: The Formula
 
-Every error message should answer: (1) What happened? (2) Why? (3) How to fix it? Example: "Email address isn't valid. Please include an @ symbol." not "Invalid input".
+Every error message should answer: (1) What happened? (2) Why? (3) How to fix it? Example: "Email address is not valid. Please include an @" symbol." not "Invalid input".
 
 ### Error Message Templates
 
 | Situation | Template |
 |-----------|----------|
 | **Format error** | "[Field] needs to be [format]. Example: [example]" |
-| **Missing required** | "Please enter [what's missing]" |
-| **Permission denied** | "You don't have access to [thing]. [What to do instead]" |
-| **Network error** | "We couldn't reach [thing]. Check your connection and [action]." |
-| **Server error** | "Something went wrong on our end. We're looking into it. [Alternative action]" |
+| **Missing required** | "Please enter [what is missing]" |
+| **Permission denied** | "You do not have access to [thing]. [What to do instead]" |
+| **Network error** | "We could not reach [thing]. Check your connection and [action]." |
+| **Server error** | "Something went wrong on our end. We are looking into it. [Alternative action]" |
 
-### Don't Blame the User
+### Do Not Blame the User
 
 Reframe errors: "Please enter a date in MM/DD/YYYY format" not "You entered an invalid date".
 
@@ -40,27 +40,27 @@ Empty states are onboarding moments: (1) Acknowledge briefly, (2) Explain the va
 
 ## Voice vs Tone
 
-**Voice** is your brand's personality—consistent everywhere.
+**Voice** is your brand personality. Consistent everywhere.
 **Tone** adapts to the moment.
 
 | Moment | Tone Shift |
 |--------|------------|
 | Success | Celebratory, brief: "Done! Your changes are live." |
-| Error | Empathetic, helpful: "That didn't work. Here's what to try..." |
+| Error | Empathetic, helpful: "That did not work. Here is what to try..." |
 | Loading | Reassuring: "Saving your work..." |
-| Destructive confirm | Serious, clear: "Delete this project? This can't be undone." |
+| Destructive confirm | Serious, clear: "Delete this project? This cannot be undone." |
 
 **Never use humor for errors.** Users are already frustrated. Be helpful, not cute.
 
 ## Writing for Accessibility
 
-**Link text** must have standalone meaning—"View pricing plans" not "Click here". **Alt text** describes information, not the image—"Revenue increased 40% in Q4" not "Chart". Use `alt=""` for decorative images. **Icon buttons** need `aria-label` for screen reader context.
+**Link text** must have standalone meaning: "View pricing plans" not "Click here". **Alt text** describes information, not the image: "Revenue increased 40% in Q4" not "Chart". Use alt="" for decorative images. **Icon buttons** need aria-label for screen reader context.
 
 ## Writing for Translation
 
 ### Plan for Expansion
 
-German text is ~30% longer than English. Allocate space:
+German text is approximately 30% longer than English. Allocate space:
 
 | Language | Expansion |
 |----------|-----------|
@@ -88,7 +88,7 @@ Build a terminology glossary and enforce it. Variety creates confusion.
 
 ## Avoid Redundant Copy
 
-If the heading explains it, the intro is redundant. If the button is clear, don't explain it again. Say it once, say it well.
+If the heading explains it, the intro is redundant. If the button is clear, do not explain it again. Say it once, say it well.
 
 ## Loading States
 
@@ -96,12 +96,12 @@ Be specific: "Saving your draft..." not "Loading...". For long waits, set expect
 
 ## Confirmation Dialogs: Use Sparingly
 
-Most confirmation dialogs are design failures—consider undo instead. When you must confirm: name the action, explain consequences, use specific button labels ("Delete project" / "Keep project", not "Yes" / "No").
+Most confirmation dialogs are design failures. Consider undo instead. When you must confirm: name the action, explain consequences, use specific button labels ("Delete project" / "Keep project", not "Yes" / "No").
 
 ## Form Instructions
 
-Show format with placeholders, not instructions. For non-obvious fields, explain why you're asking.
+Show format with placeholders, not instructions. For non-obvious fields, explain why you are asking.
 
 ---
 
-**Avoid**: Jargon without explanation. Blaming users ("You made an error" → "This field is required"). Vague errors ("Something went wrong"). Varying terminology for variety. Humor for errors.
+**Avoid**: Jargon without explanation. Blaming users ("You made an error" becomes "This field is required"). Vague errors ("Something went wrong"). Varying terminology for variety. Humor for errors.

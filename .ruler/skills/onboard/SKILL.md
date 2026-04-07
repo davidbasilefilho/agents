@@ -7,7 +7,7 @@ user-invocable: true
 
 ## MANDATORY PREPARATION
 
-Invoke {{command_prefix}}frontend-design — it contains design principles, anti-patterns, and the **Context Gathering Protocol**. Follow the protocol before proceeding — if no design context exists yet, you MUST run {{command_prefix}}teach-impeccable first. Additionally gather: the "aha moment" you want users to reach, and users' experience level.
+Invoke {{command_prefix}}frontend-design. It contains design principles, anti-patterns, and the Context Gathering Protocol. Follow the protocol before proceeding. If no design context exists yet, you MUST run {{command_prefix}}teach-impeccable first. Additionally gather: the "aha moment" you want users to reach, and users experience level.
 
 ---
 
@@ -15,39 +15,39 @@ Create or improve onboarding experiences that help users understand, adopt, and 
 
 ## Assess Onboarding Needs
 
-Understand what users need to learn and why:
+Understand what users need to learn and why.
 
-1. **Identify the challenge**:
-   - What are users trying to accomplish?
-   - What's confusing or unclear about current experience?
-   - Where do users get stuck or drop off?
-   - What's the "aha moment" we want users to reach?
+### 1. Identify the challenge
+- What are users trying to accomplish?
+- What is confusing or unclear about current experience?
+- Where do users get stuck or drop off?
+- What is the "aha moment" we want users to reach?
 
-2. **Understand the users**:
-   - What's their experience level? (Beginners, power users, mixed?)
-   - What's their motivation? (Excited and exploring? Required by work?)
-   - What's their time commitment? (5 minutes? 30 minutes?)
-   - What alternatives do they know? (Coming from competitor? New to category?)
+### 2. Understand the users
+- What is their experience level? (Beginners, power users, mixed?)
+- What is their motivation? (Excited and exploring? Required by work?)
+- What is their time commitment? (5 minutes? 30 minutes?)
+- What alternatives do they know? (Coming from competitor? New to category?)
 
-3. **Define success**:
-   - What's the minimum users need to learn to be successful?
-   - What's the key action we want them to take? (First project? First invite?)
-   - How do we know onboarding worked? (Completion rate? Time to value?)
+### 3. Define success
+- What is the minimum users need to learn to be successful?
+- What is the key action we want them to take? (First project? First invite?)
+- How do we know onboarding worked? (Completion rate? Time to value?)
 
 **CRITICAL**: Onboarding should get users to value as quickly as possible, not teach everything possible.
 
 ## Onboarding Principles
 
-Follow these core principles:
+Follow these core principles.
 
-### Show, Don't Tell
+### Show, Do Not Tell
 - Demonstrate with working examples, not just descriptions
 - Provide real functionality in onboarding, not separate tutorial mode
-- Use progressive disclosure - teach one thing at a time
+- Use progressive disclosure. Teach one thing at a time.
 
 ### Make It Optional (When Possible)
 - Let experienced users skip onboarding
-- Don't block access to product
+- Do not block access to product
 - Provide "Skip" or "I'll explore on my own" options
 
 ### Time to Value
@@ -62,46 +62,46 @@ Follow these core principles:
 - Tooltips and hints at point of use
 
 ### Respect User Intelligence
-- Don't patronize or over-explain
+- Do not patronize or over-explain
 - Be concise and clear
 - Assume users can figure out standard patterns
 
 ## Design Onboarding Experiences
 
-Create appropriate onboarding for the context:
+Create appropriate onboarding for the context.
 
 ### Initial Product Onboarding
 
 **Welcome Screen**:
 - Clear value proposition (what is this product?)
-- What users will learn/accomplish
+- What users will learn or accomplish
 - Time estimate (honest about commitment)
 - Option to skip (for experienced users)
 
 **Account Setup**:
 - Minimal required information (collect more later)
-- Explain why you're asking for each piece of information
+- Explain why you are asking for each piece of information
 - Smart defaults where possible
 - Social login when appropriate
 
 **Core Concept Introduction**:
 - Introduce 1-3 core concepts (not everything)
 - Use simple language and examples
-- Interactive when possible (do, don't just read)
+- Interactive when possible (do, do not just read)
 - Progress indication (step 1 of 3)
 
 **First Success**:
 - Guide users to accomplish something real
 - Pre-populated examples or templates
-- Celebrate completion (but don't overdo it)
+- Celebrate completion (but do not overdo it)
 - Clear next steps
 
-### Feature Discovery & Adoption
+### Feature Discovery and Adoption
 
 **Empty States**:
 Instead of blank space, show:
-- What will appear here (description + screenshot/illustration)
-- Why it's valuable
+- What will appear here (description plus screenshot or illustration)
+- Why it is valuable
 - Clear CTA to create first item
 - Example or template option
 
@@ -115,22 +115,22 @@ Projects help you organize your work and collaborate with your team.
 **Contextual Tooltips**:
 - Appear at relevant moment (first time user sees feature)
 - Point directly at relevant UI element
-- Brief explanation + benefit
-- Dismissable (with "Don't show again" option)
+- Brief explanation plus benefit
+- Dismissable (with "Do not show again" option)
 - Optional "Learn more" link
 
 **Feature Announcements**:
-- Highlight new features when they're released
-- Show what's new and why it matters
+- Highlight new features when they are released
+- Show what is new and why it matters
 - Let users try immediately
 - Dismissable
 
 **Progressive Onboarding**:
 - Teach features when users encounter them
-- Badges or indicators on new/unused features
-- Unlock complexity gradually (don't show all options immediately)
+- Badges or indicators on new or unused features
+- Unlock complexity gradually (do not show all options immediately)
 
-### Guided Tours & Walkthroughs
+### Guided Tours and Walkthroughs
 
 **When to use**:
 - Complex interfaces with many features
@@ -145,7 +145,7 @@ Projects help you organize your work and collaborate with your team.
 - Make replayable (help menu)
 
 **Best practices**:
-- Interactive > passive (let users click real buttons)
+- Interactive is greater than passive (let users click real buttons)
 - Focus on workflow, not features ("Create a project" not "This is the project button")
 - Provide sample data so actions work
 
@@ -161,9 +161,9 @@ Projects help you organize your work and collaborate with your team.
 - Clear objectives ("Create a chart showing sales by region")
 - Step-by-step guidance
 - Validation (confirm they did it right)
-- Graduation moment (you're ready!)
+- Graduation moment (you are ready!)
 
-### Documentation & Help
+### Documentation and Help
 
 **In-product help**:
 - Contextual help links throughout interface
@@ -172,9 +172,9 @@ Projects help you organize your work and collaborate with your team.
 - Video tutorials for complex workflows
 
 **Help patterns**:
-- `?` icon near complex features
+- Question mark icon near complex features
 - "Learn more" links in tooltips
-- Keyboard shortcut hints (`⌘K` shown on search box)
+- Keyboard shortcut hints (Command+K shown on search box)
 
 ## Empty State Design
 
@@ -199,12 +199,12 @@ Illustration or icon (not just text on blank page)
 - **First use**: Never used this feature (emphasize value, provide template)
 - **User cleared**: Intentionally deleted everything (light touch, easy to recreate)
 - **No results**: Search or filter returned nothing (suggest different query, clear filters)
-- **No permissions**: Can't access (explain why, how to get access)
+- **No permissions**: Cannot access (explain why, how to get access)
 - **Error state**: Failed to load (explain what happened, retry option)
 
 ## Implementation Patterns
 
-### Technical approaches:
+### Technical approaches
 
 **Tooltip libraries**: Tippy.js, Popper.js
 **Tour libraries**: Intro.js, Shepherd.js, React Joyride
@@ -219,7 +219,7 @@ localStorage.setItem('onboarding-completed', 'true');
 localStorage.setItem('feature-tooltip-seen-reports', 'true');
 ```
 
-**IMPORTANT**: Don't show same onboarding twice (annoying). Track completion and respect dismissals.
+**IMPORTANT**: Do not show same onboarding twice (annoying). Track completion and respect dismissals.
 
 **NEVER**:
 - Force users through long onboarding before they can use product
@@ -229,18 +229,17 @@ localStorage.setItem('feature-tooltip-seen-reports', 'true');
 - Create separate tutorial mode disconnected from real product
 - Overwhelm with information upfront (progressive disclosure!)
 - Hide "Skip" or make it hard to find
-- Forget about returning users (don't show initial onboarding again)
+- Forget about returning users (do not show initial onboarding again)
 
 ## Verify Onboarding Quality
 
-Test with real users:
+Test with real users.
 
 - **Time to completion**: Can users complete onboarding quickly?
 - **Comprehension**: Do users understand after completing?
 - **Action**: Do users take desired next step?
-- **Skip rate**: Are too many users skipping? (Maybe it's too long/not valuable)
+- **Skip rate**: Are too many users skipping? (Maybe it is too long or not valuable)
 - **Completion rate**: Are users completing? (If low, simplify)
 - **Time to value**: How long until users get first value?
 
-Remember: You're a product educator with excellent teaching instincts. Get users to their "aha moment" as quickly as possible. Teach the essential, make it contextual, respect user time and intelligence.
-
+Remember: You are a product educator with excellent teaching instincts. Get users to their "aha moment" as quickly as possible. Teach the essential, make it contextual, respect user time and intelligence.

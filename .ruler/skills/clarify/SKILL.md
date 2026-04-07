@@ -9,36 +9,36 @@ Identify and improve unclear, confusing, or poorly written interface text to mak
 
 ## MANDATORY PREPARATION
 
-Invoke {{command_prefix}}frontend-design — it contains design principles, anti-patterns, and the **Context Gathering Protocol**. Follow the protocol before proceeding — if no design context exists yet, you MUST run {{command_prefix}}teach-impeccable first. Additionally gather: audience technical level and users' mental state in context.
+Invoke {{command_prefix}}frontend-design. It contains design principles, anti-patterns, and the Context Gathering Protocol. Follow the protocol before proceeding. If no design context exists yet, you MUST run {{command_prefix}}teach-impeccable first. Additionally gather: audience technical level and users mental state in context.
 
 ---
 
 ## Assess Current Copy
 
-Identify what makes the text unclear or ineffective:
+Identify what makes the text unclear or ineffective.
 
-1. **Find clarity problems**:
-   - **Jargon**: Technical terms users won't understand
-   - **Ambiguity**: Multiple interpretations possible
-   - **Passive voice**: "Your file has been uploaded" vs "We uploaded your file"
-   - **Length**: Too wordy or too terse
-   - **Assumptions**: Assuming user knowledge they don't have
-   - **Missing context**: Users don't know what to do or why
-   - **Tone mismatch**: Too formal, too casual, or inappropriate for situation
+### 1. Find clarity problems
+- **Jargon**: Technical terms users will not understand
+- **Ambiguity**: Multiple interpretations possible
+- **Passive voice**: "Your file has been uploaded" vs "We uploaded your file"
+- **Length**: Too wordy or too terse
+- **Assumptions**: Assuming user knowledge they do not have
+- **Missing context**: Users do not know what to do or why
+- **Tone mismatch**: Too formal, too casual, or inappropriate for situation
 
-2. **Understand the context**:
-   - Who's the audience? (Technical? General? First-time users?)
-   - What's the user's mental state? (Stressed during error? Confident during success?)
-   - What's the action? (What do we want users to do?)
-   - What's the constraint? (Character limits? Space limitations?)
+### 2. Understand the context
+- Who is the audience? (Technical? General? First-time users?)
+- What is the user mental state? (Stressed during error? Confident during success?)
+- What is the action? (What do we want users to do?)
+- What is the constraint? (Character limits? Space limitations?)
 
 **CRITICAL**: Clear copy helps users succeed. Unclear copy creates frustration, errors, and support tickets.
 
 ## Plan Copy Improvements
 
-Create a strategy for clearer communication:
+Create a strategy for clearer communication.
 
-- **Primary message**: What's the ONE thing users need to know?
+- **Primary message**: What is the ONE thing users need to know?
 - **Action needed**: What should users do next (if anything)?
 - **Tone**: How should this feel? (Helpful? Apologetic? Encouraging?)
 - **Constraints**: Length limits, brand voice, localization considerations
@@ -47,11 +47,11 @@ Create a strategy for clearer communication:
 
 ## Improve Copy Systematically
 
-Refine text across these common areas:
+Refine text across these common areas.
 
 ### Error Messages
 **Bad**: "Error 403: Forbidden"
-**Good**: "You don't have permission to view this page. Contact your admin for access."
+**Good**: "You do not have permission to view this page. Contact your admin for access."
 
 **Bad**: "Invalid input"
 **Good**: "Email addresses need an @ symbol. Try: name@example.com"
@@ -59,11 +59,11 @@ Refine text across these common areas:
 **Principles**:
 - Explain what went wrong in plain language
 - Suggest how to fix it
-- Don't blame the user
+- Do not blame the user
 - Include examples when helpful
-- Link to help/support if applicable
+- Link to help or support if applicable
 
-### Form Labels & Instructions
+### Form Labels and Instructions
 **Bad**: "DOB (MM/DD/YYYY)"
 **Good**: "Date of birth" (with placeholder showing format)
 
@@ -73,26 +73,26 @@ Refine text across these common areas:
 **Principles**:
 - Use clear, specific labels (not generic placeholders)
 - Show format expectations with examples
-- Explain why you're asking (when not obvious)
+- Explain why you are asking (when not obvious)
 - Put instructions before the field, not after
 - Keep required field indicators clear
 
-### Button & CTA Text
+### Button and CTA Text
 **Bad**: "Click here" | "Submit" | "OK"
 **Good**: "Create account" | "Save changes" | "Got it, thanks"
 
 **Principles**:
 - Describe the action specifically
-- Use active voice (verb + noun)
-- Match user's mental model
+- Use active voice (verb plus noun)
+- Match user mental model
 - Be specific ("Save" is better than "OK")
 
-### Help Text & Tooltips
+### Help Text and Tooltips
 **Bad**: "This is the username field"
 **Good**: "Choose a username. You can change this later in Settings."
 
 **Principles**:
-- Add value (don't just repeat the label)
+- Add value (do not just repeat the label)
 - Answer the implicit question ("What is this?" or "Why do you need this?")
 - Keep it brief but complete
 - Link to detailed docs if needed
@@ -102,7 +102,7 @@ Refine text across these common areas:
 **Good**: "No projects yet. Create your first project to get started."
 
 **Principles**:
-- Explain why it's empty (if not obvious)
+- Explain why it is empty (if not obvious)
 - Show next action clearly
 - Make it welcoming, not dead-end
 
@@ -114,7 +114,7 @@ Refine text across these common areas:
 - Confirm what happened
 - Explain what happens next (if relevant)
 - Be brief but complete
-- Match the user's emotional moment (celebrate big wins)
+- Match user emotional moment (celebrate big wins)
 
 ### Loading States
 **Bad**: "Loading..." (for 30+ seconds)
@@ -122,21 +122,21 @@ Refine text across these common areas:
 
 **Principles**:
 - Set expectations (how long?)
-- Explain what's happening (when it's not obvious)
+- Explain what is happening (when it is not obvious)
 - Show progress when possible
 - Offer escape hatch if appropriate ("Cancel")
 
 ### Confirmation Dialogs
 **Bad**: "Are you sure?"
-**Good**: "Delete 'Project Alpha'? This can't be undone."
+**Good**: "Delete 'Project Alpha'? This cannot be undone."
 
 **Principles**:
 - State the specific action
 - Explain consequences (especially for destructive actions)
 - Use clear button labels ("Delete project" not "Yes")
-- Don't overuse confirmations (only for risky actions)
+- Do not overuse confirmations (only for risky actions)
 
-### Navigation & Wayfinding
+### Navigation and Wayfinding
 **Bad**: Generic labels like "Items" | "Things" | "Stuff"
 **Good**: Specific labels like "Your projects" | "Team members" | "Settings"
 
@@ -151,15 +151,15 @@ Refine text across these common areas:
 Every piece of copy should follow these rules:
 
 1. **Be specific**: "Enter email" not "Enter value"
-2. **Be concise**: Cut unnecessary words (but don't sacrifice clarity)
+2. **Be concise**: Cut unnecessary words (but do not sacrifice clarity)
 3. **Be active**: "Save changes" not "Changes will be saved"
 4. **Be human**: "Oops, something went wrong" not "System error encountered"
 5. **Be helpful**: Tell users what to do, not just what happened
-6. **Be consistent**: Use same terms throughout (don't vary for variety)
+6. **Be consistent**: Use same terms throughout (do not vary for variety)
 
 **NEVER**:
 - Use jargon without explanation
-- Blame users ("You made an error" → "This field is required")
+- Blame users ("You made an error" becomes "This field is required")
 - Be vague ("Something went wrong" without explanation)
 - Use passive voice unnecessarily
 - Write overly long explanations (be concise)
@@ -171,7 +171,7 @@ Every piece of copy should follow these rules:
 
 ## Verify Improvements
 
-Test that copy improvements work:
+Test that copy improvements work.
 
 - **Comprehension**: Can users understand without context?
 - **Actionability**: Do users know what to do next?
@@ -179,5 +179,4 @@ Test that copy improvements work:
 - **Consistency**: Does it match terminology elsewhere?
 - **Tone**: Is it appropriate for the situation?
 
-Remember: You're a clarity expert with excellent communication skills. Write like you're explaining to a smart friend who's unfamiliar with the product. Be clear, be helpful, be human.
-
+Remember: You are a clarity expert with excellent communication skills. Write like you are explaining to a smart friend who is unfamiliar with the product. Be clear, be helpful, be human.

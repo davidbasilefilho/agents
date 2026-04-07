@@ -5,49 +5,49 @@ argument-hint: "[target] [context (mobile, tablet, print...)]"
 user-invocable: true
 ---
 
-Adapt existing designs to work effectively across different contexts - different screen sizes, devices, platforms, or use cases.
+Adapt existing designs to work effectively across different contexts: different screen sizes, devices, platforms, or use cases.
 
 ## MANDATORY PREPARATION
 
-Invoke {{command_prefix}}frontend-design — it contains design principles, anti-patterns, and the **Context Gathering Protocol**. Follow the protocol before proceeding — if no design context exists yet, you MUST run {{command_prefix}}teach-impeccable first. Additionally gather: target platforms/devices and usage contexts.
+Invoke {{command_prefix}}frontend-design. It contains design principles, anti-patterns, and the Context Gathering Protocol. Follow the protocol before proceeding. If no design context exists yet, you MUST run {{command_prefix}}teach-impeccable first. Additionally gather: target platforms or devices and usage contexts.
 
 ---
 
 ## Assess Adaptation Challenge
 
-Understand what needs adaptation and why:
+Understand what needs adaptation and why.
 
-1. **Identify the source context**:
-   - What was it designed for originally? (Desktop web? Mobile app?)
-   - What assumptions were made? (Large screen? Mouse input? Fast connection?)
-   - What works well in current context?
+### 1. Identify the source context
+- What was it designed for originally? (Desktop web? Mobile app?)
+- What assumptions were made? (Large screen? Mouse input? Fast connection?)
+- What works well in current context?
 
-2. **Understand target context**:
-   - **Device**: Mobile, tablet, desktop, TV, watch, print?
-   - **Input method**: Touch, mouse, keyboard, voice, gamepad?
-   - **Screen constraints**: Size, resolution, orientation?
-   - **Connection**: Fast wifi, slow 3G, offline?
-   - **Usage context**: On-the-go vs desk, quick glance vs focused reading?
-   - **User expectations**: What do users expect on this platform?
+### 2. Understand target context
+- **Device**: Mobile, tablet, desktop, TV, watch, print?
+- **Input method**: Touch, mouse, keyboard, voice, gamepad?
+- **Screen constraints**: Size, resolution, orientation?
+- **Connection**: Fast wifi, slow 3G, offline?
+- **Usage context**: On-the-go vs desk, quick glance vs focused reading?
+- **User expectations**: What do users expect on this platform?
 
-3. **Identify adaptation challenges**:
-   - What won't fit? (Content, navigation, features)
-   - What won't work? (Hover states on touch, tiny touch targets)
-   - What's inappropriate? (Desktop patterns on mobile, mobile patterns on desktop)
+### 3. Identify adaptation challenges
+- What will not fit? (Content, navigation, features)
+- What will not work? (Hover states on touch, tiny touch targets)
+- What is inappropriate? (Desktop patterns on mobile, mobile patterns on desktop)
 
-**CRITICAL**: Adaptation is not just scaling - it's rethinking the experience for the new context.
+**CRITICAL**: Adaptation is not just scaling. It is rethinking the experience for the new context.
 
 ## Plan Adaptation Strategy
 
-Create context-appropriate strategy:
+Create context-appropriate strategy.
 
-### Mobile Adaptation (Desktop → Mobile)
+### Mobile Adaptation (Desktop to Mobile)
 
 **Layout Strategy**:
 - Single column instead of multi-column
 - Vertical stacking instead of side-by-side
 - Full-width components instead of fixed widths
-- Bottom navigation instead of top/side navigation
+- Bottom navigation instead of top or side navigation
 
 **Interaction Strategy**:
 - Touch targets 44x44px minimum (not hover-dependent)
@@ -57,8 +57,8 @@ Create context-appropriate strategy:
 - Larger tap areas with more spacing
 
 **Content Strategy**:
-- Progressive disclosure (don't show everything at once)
-- Prioritize primary content (secondary content in tabs/accordions)
+- Progressive disclosure (do not show everything at once)
+- Prioritize primary content (secondary content in tabs or accordions)
 - Shorter text (more concise)
 - Larger text (16px minimum)
 
@@ -73,7 +73,7 @@ Create context-appropriate strategy:
 **Layout Strategy**:
 - Two-column layouts (not single or three-column)
 - Side panels for secondary content
-- Master-detail views (list + detail)
+- Master-detail views (list plus detail)
 - Adaptive based on orientation (portrait vs landscape)
 
 **Interaction Strategy**:
@@ -82,20 +82,20 @@ Create context-appropriate strategy:
 - Side navigation drawers
 - Multi-column forms where appropriate
 
-### Desktop Adaptation (Mobile → Desktop)
+### Desktop Adaptation (Mobile to Desktop)
 
 **Layout Strategy**:
 - Multi-column layouts (use horizontal space)
 - Side navigation always visible
 - Multiple information panels simultaneously
-- Fixed widths with max-width constraints (don't stretch to 4K)
+- Fixed widths with max-width constraints (do not stretch to 4K)
 
 **Interaction Strategy**:
 - Hover states for additional information
 - Keyboard shortcuts
 - Right-click context menus
 - Drag and drop where helpful
-- Multi-select with Shift/Cmd
+- Multi-select with Shift or Cmd
 
 **Content Strategy**:
 - Show more information upfront (less progressive disclosure)
@@ -103,7 +103,7 @@ Create context-appropriate strategy:
 - Richer visualizations
 - More detailed descriptions
 
-### Print Adaptation (Screen → Print)
+### Print Adaptation (Screen to Print)
 
 **Layout Strategy**:
 - Page breaks at logical points
@@ -117,7 +117,7 @@ Create context-appropriate strategy:
 - Include metadata (print date, page title)
 - Convert charts to print-friendly versions
 
-### Email Adaptation (Web → Email)
+### Email Adaptation (Web to Email)
 
 **Layout Strategy**:
 - Narrow width (600px max)
@@ -132,7 +132,7 @@ Create context-appropriate strategy:
 
 ## Implement Adaptations
 
-Apply changes systematically:
+Apply changes systematically.
 
 ### Responsive Breakpoints
 
@@ -144,11 +144,11 @@ Choose appropriate breakpoints:
 
 ### Layout Adaptation Techniques
 
-- **CSS Grid/Flexbox**: Reflow layouts automatically
+- **CSS Grid or Flexbox**: Reflow layouts automatically
 - **Container Queries**: Adapt based on container, not viewport
-- **`clamp()`**: Fluid sizing between min and max
+- **clamp()**: Fluid sizing between min and max
 - **Media queries**: Different styles for different contexts
-- **Display properties**: Show/hide elements per context
+- **Display properties**: Show or hide elements per context
 
 ### Touch Adaptation
 
@@ -160,14 +160,14 @@ Choose appropriate breakpoints:
 
 ### Content Adaptation
 
-- Use `display: none` sparingly (still downloads)
+- Use display: none sparingly (still downloads)
 - Progressive enhancement (core content first, enhancements on larger screens)
 - Lazy loading for off-screen content
-- Responsive images (`srcset`, `picture` element)
+- Responsive images (srcset, picture element)
 
 ### Navigation Adaptation
 
-- Transform complex nav to hamburger/drawer on mobile
+- Transform complex nav to hamburger or drawer on mobile
 - Bottom nav bar for mobile apps
 - Persistent side navigation on desktop
 - Breadcrumbs on smaller screens for context
@@ -176,16 +176,16 @@ Choose appropriate breakpoints:
 
 **NEVER**:
 - Hide core functionality on mobile (if it matters, make it work)
-- Assume desktop = powerful device (consider accessibility, older machines)
+- Assume desktop equals powerful device (consider accessibility, older machines)
 - Use different information architecture across contexts (confusing)
 - Break user expectations for platform (mobile users expect mobile patterns)
-- Forget landscape orientation on mobile/tablet
+- Forget landscape orientation on mobile or tablet
 - Use generic breakpoints blindly (use content-driven breakpoints)
 - Ignore touch on desktop (many desktop devices have touch)
 
 ## Verify Adaptations
 
-Test thoroughly across contexts:
+Test thoroughly across contexts.
 
 - **Real devices**: Test on actual phones, tablets, desktops
 - **Different orientations**: Portrait and landscape
@@ -195,5 +195,4 @@ Test thoroughly across contexts:
 - **Edge cases**: Very small screens (320px), very large screens (4K)
 - **Slow connections**: Test on throttled network
 
-Remember: You're a cross-platform design expert. Make experiences that feel native to each context while maintaining brand and functionality consistency. Adapt intentionally, test thoroughly.
-
+Remember: You are a cross-platform design expert. Make experiences that feel native to each context while maintaining brand and functionality consistency. Adapt intentionally, test thoroughly.

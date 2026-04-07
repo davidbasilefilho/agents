@@ -9,38 +9,38 @@ Remove unnecessary complexity from designs, revealing the essential elements and
 
 ## MANDATORY PREPARATION
 
-Invoke {{command_prefix}}frontend-design — it contains design principles, anti-patterns, and the **Context Gathering Protocol**. Follow the protocol before proceeding — if no design context exists yet, you MUST run {{command_prefix}}teach-impeccable first.
+Invoke {{command_prefix}}frontend-design. It contains design principles, anti-patterns, and the Context Gathering Protocol. Follow the protocol before proceeding. If no design context exists yet, you MUST run {{command_prefix}}teach-impeccable first.
 
 ---
 
 ## Assess Current State
 
-Analyze what makes the design feel complex or cluttered:
+Analyze what makes the design feel complex or cluttered.
 
-1. **Identify complexity sources**:
-   - **Too many elements**: Competing buttons, redundant information, visual clutter
-   - **Excessive variation**: Too many colors, fonts, sizes, styles without purpose
-   - **Information overload**: Everything visible at once, no progressive disclosure
-   - **Visual noise**: Unnecessary borders, shadows, backgrounds, decorations
-   - **Confusing hierarchy**: Unclear what matters most
-   - **Feature creep**: Too many options, actions, or paths forward
+### 1. Identify complexity sources
+- **Too many elements**: Competing buttons, redundant information, visual clutter
+- **Excessive variation**: Too many colors, fonts, sizes, styles without purpose
+- **Information overload**: Everything visible at once, no progressive disclosure
+- **Visual noise**: Unnecessary borders, shadows, backgrounds, decorations
+- **Confusing hierarchy**: Unclear what matters most
+- **Feature creep**: Too many options, actions, or paths forward
 
-2. **Find the essence**:
-   - What's the primary user goal? (There should be ONE)
-   - What's actually necessary vs nice-to-have?
-   - What can be removed, hidden, or combined?
-   - What's the 20% that delivers 80% of value?
+### 2. Find the essence
+- What is the primary user goal? (There should be ONE)
+- What is actually necessary vs nice-to-have?
+- What can be removed, hidden, or combined?
+- What is the 20% that delivers 80% of value?
 
 If any of these are unclear from the codebase, {{ask_instruction}}
 
-**CRITICAL**: Simplicity is not about removing features - it's about removing obstacles between users and their goals. Every element should justify its existence.
+**CRITICAL**: Simplicity is not about removing features. It is about removing obstacles between users and their goals. Every element should justify its existence.
 
 ## Plan Simplification
 
-Create a ruthless editing strategy:
+Create a ruthless editing strategy.
 
-- **Core purpose**: What's the ONE thing this should accomplish?
-- **Essential elements**: What's truly necessary to achieve that purpose?
+- **Core purpose**: What is the ONE thing this should accomplish?
+- **Essential elements**: What is truly necessary to achieve that purpose?
 - **Progressive disclosure**: What can be hidden until needed?
 - **Consolidation opportunities**: What can be combined or integrated?
 
@@ -48,21 +48,21 @@ Create a ruthless editing strategy:
 
 ## Simplify the Design
 
-Systematically remove complexity across these dimensions:
+Systematically remove complexity across these dimensions.
 
 ### Information Architecture
 - **Reduce scope**: Remove secondary actions, optional features, redundant information
 - **Progressive disclosure**: Hide complexity behind clear entry points (accordions, modals, step-through flows)
 - **Combine related actions**: Merge similar buttons, consolidate forms, group related content
 - **Clear hierarchy**: ONE primary action, few secondary actions, everything else tertiary or hidden
-- **Remove redundancy**: If it's said elsewhere, don't repeat it here
+- **Remove redundancy**: If it is said elsewhere, do not repeat it here
 
 ### Visual Simplification
 - **Reduce color palette**: Use 1-2 colors plus neutrals, not 5-7 colors
 - **Limit typography**: One font family, 3-4 sizes maximum, 2-3 weights
-- **Remove decorations**: Eliminate borders, shadows, backgrounds that don't serve hierarchy or function
-- **Flatten structure**: Reduce nesting, remove unnecessary containers—never nest cards inside cards
-- **Remove unnecessary cards**: Cards aren't needed for basic layout; use spacing and alignment instead
+- **Remove decorations**: Eliminate borders, shadows, backgrounds that do not serve hierarchy or function
+- **Flatten structure**: Reduce nesting, remove unnecessary containers. Never nest cards inside cards.
+- **Remove unnecessary cards**: Cards are not needed for basic layout. Use spacing and alignment instead.
 - **Consistent spacing**: Use one spacing scale, remove arbitrary gaps
 
 ### Layout Simplification
@@ -70,7 +70,7 @@ Systematically remove complexity across these dimensions:
 - **Remove sidebars**: Move secondary content inline or hide it
 - **Full-width**: Use available space generously instead of complex multi-column layouts
 - **Consistent alignment**: Pick left or center, stick with it
-- **Generous white space**: Let content breathe, don't pack everything tight
+- **Generous white space**: Let content breathe, do not pack everything tight
 
 ### Interaction Simplification
 - **Reduce choices**: Fewer buttons, fewer options, clearer path forward (paradox of choice is real)
@@ -94,16 +94,16 @@ Systematically remove complexity across these dimensions:
 - **Reduce variants**: Does that component need 12 variations, or can 3 cover 90% of cases?
 
 **NEVER**:
-- Remove necessary functionality (simplicity ≠ feature-less)
+- Remove necessary functionality (simplicity equals feature-less)
 - Sacrifice accessibility for simplicity (clear labels and ARIA still required)
-- Make things so simple they're unclear (mystery ≠ minimalism)
+- Make things so simple they are unclear (mystery equals minimalism)
 - Remove information users need to make decisions
 - Eliminate hierarchy completely (some things should stand out)
 - Oversimplify complex domains (match complexity to actual task complexity)
 
 ## Verify Simplification
 
-Ensure simplification improves usability:
+Ensure simplification improves usability.
 
 - **Faster task completion**: Can users accomplish goals more quickly?
 - **Reduced cognitive load**: Is it easier to understand what to do?
@@ -118,4 +118,4 @@ If you removed features or options:
 - Consider if they need alternative access points
 - Note any user feedback to monitor
 
-Remember: You have great taste and judgment. Simplification is an act of confidence - knowing what to keep and courage to remove the rest. As Antoine de Saint-Exupéry said: "Perfection is achieved not when there is nothing more to add, but when there is nothing left to take away."
+Remember: You have great taste and judgment. Simplification is an act of confidence: knowing what to keep and courage to remove the rest. As Antoine de Saint-Exupery said: "Perfection is achieved not when there is nothing more to add, but when there is nothing left to take away."

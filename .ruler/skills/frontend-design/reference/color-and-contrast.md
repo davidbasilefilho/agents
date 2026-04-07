@@ -1,8 +1,8 @@
-# Color & Contrast
+# Color and Contrast
 
 ## Color Spaces: Use OKLCH
 
-**Stop using HSL.** Use OKLCH (or LCH) instead. It's perceptually uniform, meaning equal steps in lightness *look* equal—unlike HSL where 50% lightness in yellow looks bright while 50% in blue looks dark.
+**Stop using HSL.** Use OKLCH (or LCH) instead. It is perceptually uniform, meaning equal steps in lightness look equal. Unlike HSL where 50% lightness in yellow looks bright while 50% in blue looks dark.
 
 ```css
 /* OKLCH: lightness (0-100%), chroma (0-0.4+), hue (0-360) */
@@ -11,7 +11,7 @@
 --color-primary-dark: oklch(35% 0.12 250);  /* Same hue, darker */
 ```
 
-**Key insight**: As you move toward white or black, reduce chroma (saturation). High chroma at extreme lightness looks garish. A light blue at 85% lightness needs ~0.08 chroma, not the 0.15 of your base color.
+**Key insight**: As you move toward white or black, reduce chroma (saturation). High chroma at extreme lightness looks garish. A light blue at 85% lightness needs approximately 0.08 chroma, not the 0.15 of your base color.
 
 ## Building Functional Palettes
 
@@ -46,19 +46,19 @@ A complete system needs:
 | **Semantic** | Success, error, warning, info | 4 colors, 2-3 shades each |
 | **Surface** | Cards, modals, overlays | 2-3 elevation levels |
 
-**Skip secondary/tertiary unless you need them.** Most apps work fine with one accent color. Adding more creates decision fatigue and visual noise.
+**Skip secondary or tertiary unless you need them.** Most apps work fine with one accent color. Adding more creates decision fatigue and visual noise.
 
 ### The 60-30-10 Rule (Applied Correctly)
 
 This rule is about **visual weight**, not pixel count:
 
 - **60%**: Neutral backgrounds, white space, base surfaces
-- **30%**: Secondary colors—text, borders, inactive states
-- **10%**: Accent—CTAs, highlights, focus states
+- **30%**: Secondary colors. Text, borders, inactive states.
+- **10%**: Accent. CTAs, highlights, focus states.
 
-The common mistake: using the accent color everywhere because it's "the brand color." Accent colors work *because* they're rare. Overuse kills their power.
+The common mistake: using the accent color everywhere because it is "the brand color." Accent colors work because they are rare. Overuse kills their power.
 
-## Contrast & Accessibility
+## Contrast and Accessibility
 
 ### WCAG Requirements
 
@@ -75,37 +75,37 @@ The common mistake: using the accent color everywhere because it's "the brand co
 
 These commonly fail contrast or cause readability issues:
 
-- Light gray text on white (the #1 accessibility fail)
-- **Gray text on any colored background**—gray looks washed out and dead on color. Use a darker shade of the background color, or transparency
-- Red text on green background (or vice versa)—8% of men can't distinguish these
+- Light gray text on white (the number 1 accessibility fail)
+- **Gray text on any colored background.** Gray looks washed out and dead on color. Use a darker shade of the background color, or transparency.
+- Red text on green background (or vice versa). 8% of men cannot distinguish these.
 - Blue text on red background (vibrates visually)
 - Yellow text on white (almost always fails)
 - Thin light text on images (unpredictable contrast)
 
 ### Never Use Pure Gray or Pure Black
 
-Pure gray (`oklch(50% 0 0)`) and pure black (`#000`) don't exist in nature—real shadows and surfaces always have a color cast. Even a chroma of 0.005-0.01 is enough to feel natural without being obviously tinted. (See tinted neutrals example above.)
+Pure gray (oklch(50% 0 0)) and pure black (#000) do not exist in nature. Real shadows and surfaces always have a color cast. Even a chroma of 0.005-0.01 is enough to feel natural without being obviously tinted. (See tinted neutrals example above.)
 
 ### Testing
 
-Don't trust your eyes. Use tools:
+Do not trust your eyes. Use tools:
 
-- [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/)
-- Browser DevTools → Rendering → Emulate vision deficiencies
-- [Polypane](https://polypane.app/) for real-time testing
+- WebAIM Contrast Checker
+- Browser DevTools. Rendering. Emulate vision deficiencies.
+- Polypane for real-time testing.
 
-## Theming: Light & Dark Mode
+## Theming: Light and Dark Mode
 
 ### Dark Mode Is Not Inverted Light Mode
 
-You can't just swap colors. Dark mode requires different design decisions:
+You cannot just swap colors. Dark mode requires different design decisions:
 
 | Light Mode | Dark Mode |
 |------------|-----------|
 | Shadows for depth | Lighter surfaces for depth (no shadows) |
 | Dark text on light | Light text on dark (reduce font weight) |
 | Vibrant accents | Desaturate accents slightly |
-| White backgrounds | Never pure black—use dark gray (oklch 12-18%) |
+| White backgrounds | Never pure black. Use dark gray (oklch 12-18%) |
 
 ```css
 /* Dark mode depth via surface color, not shadow */
@@ -121,7 +121,7 @@ You can't just swap colors. Dark mode requires different design decisions:
 
 ### Token Hierarchy
 
-Use two layers: primitive tokens (`--blue-500`) and semantic tokens (`--color-primary: var(--blue-500)`). For dark mode, only redefine the semantic layer—primitives stay the same.
+Use two layers: primitive tokens (--blue-500) and semantic tokens (--color-primary: var(--blue-500)). For dark mode, only redefine the semantic layer. Primitives stay the same.
 
 ## Alpha Is A Design Smell
 

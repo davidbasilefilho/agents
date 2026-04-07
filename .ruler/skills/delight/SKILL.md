@@ -9,60 +9,60 @@ Identify opportunities to add moments of joy, personality, and unexpected polish
 
 ## MANDATORY PREPARATION
 
-Invoke {{command_prefix}}frontend-design — it contains design principles, anti-patterns, and the **Context Gathering Protocol**. Follow the protocol before proceeding — if no design context exists yet, you MUST run {{command_prefix}}teach-impeccable first. Additionally gather: what's appropriate for the domain (playful vs professional vs quirky vs elegant).
+Invoke {{command_prefix}}frontend-design. It contains design principles, anti-patterns, and the Context Gathering Protocol. Follow the protocol before proceeding. If no design context exists yet, you MUST run {{command_prefix}}teach-impeccable first. Additionally gather: what is appropriate for the domain (playful vs professional vs quirky vs elegant).
 
 ---
 
 ## Assess Delight Opportunities
 
-Identify where delight would enhance (not distract from) the experience:
+Identify where delight would enhance (not distract from) the experience.
 
-1. **Find natural delight moments**:
-   - **Success states**: Completed actions (save, send, publish)
-   - **Empty states**: First-time experiences, onboarding
-   - **Loading states**: Waiting periods that could be entertaining
-   - **Achievements**: Milestones, streaks, completions
-   - **Interactions**: Hover states, clicks, drags
-   - **Errors**: Softening frustrating moments
-   - **Easter eggs**: Hidden discoveries for curious users
+### 1. Find natural delight moments
+- **Success states**: Completed actions (save, send, publish)
+- **Empty states**: First-time experiences, onboarding
+- **Loading states**: Waiting periods that could be entertaining
+- **Achievements**: Milestones, streaks, completions
+- **Interactions**: Hover states, clicks, drags
+- **Errors**: Softening frustrating moments
+- **Easter eggs**: Hidden discoveries for curious users
 
-2. **Understand the context**:
-   - What's the brand personality? (Playful? Professional? Quirky? Elegant?)
-   - Who's the audience? (Tech-savvy? Creative? Corporate?)
-   - What's the emotional context? (Accomplishment? Exploration? Frustration?)
-   - What's appropriate? (Banking app ≠ gaming app)
+### 2. Understand the context
+- What is the brand personality? (Playful? Professional? Quirky? Elegant?)
+- Who is the audience? (Tech-savvy? Creative? Corporate?)
+- What is the emotional context? (Accomplishment? Exploration? Frustration?)
+- What is appropriate? (Banking app does not equal gaming app)
 
-3. **Define delight strategy**:
-   - **Subtle sophistication**: Refined micro-interactions (luxury brands)
-   - **Playful personality**: Whimsical illustrations and copy (consumer apps)
-   - **Helpful surprises**: Anticipating needs before users ask (productivity tools)
-   - **Sensory richness**: Satisfying sounds, smooth animations (creative tools)
+### 3. Define delight strategy
+- **Subtle sophistication**: Refined micro-interactions (luxury brands)
+- **Playful personality**: Whimsical illustrations and copy (consumer apps)
+- **Helpful surprises**: Anticipating needs before users ask (productivity tools)
+- **Sensory richness**: Satisfying sounds, smooth animations (creative tools)
 
 If any of these are unclear from the codebase, {{ask_instruction}}
 
-**CRITICAL**: Delight should enhance usability, never obscure it. If users notice the delight more than accomplishing their goal, you've gone too far.
+**CRITICAL**: Delight should enhance usability, never obscure it. If users notice the delight more than accomplishing their goal, you have gone too far.
 
 ## Delight Principles
 
-Follow these guidelines:
+Follow these guidelines.
 
 ### Delight Amplifies, Never Blocks
-- Delight moments should be quick (< 1 second)
+- Delight moments should be quick (less than 1 second)
 - Never delay core functionality for delight
 - Make delight skippable or subtle
-- Respect user's time and task focus
+- Respect user time and task focus
 
 ### Surprise and Discovery
 - Hide delightful details for users to discover
 - Reward exploration and curiosity
-- Don't announce every delight moment
+- Do not announce every delight moment
 - Let users share discoveries with others
 
 ### Appropriate to Context
 - Match delight to emotional moment (celebrate success, empathize with errors)
-- Respect the user's state (don't be playful during critical errors)
+- Respect the user state (do not be playful during critical errors)
 - Match brand personality and audience expectations
-- Cultural sensitivity (what's delightful varies by culture)
+- Cultural sensitivity (what is delightful varies by culture)
 
 ### Compound Over Time
 - Delight should remain fresh with repeated use
@@ -72,9 +72,9 @@ Follow these guidelines:
 
 ## Delight Techniques
 
-Add personality and joy through these methods:
+Add personality and joy through these methods.
 
-### Micro-interactions & Animation
+### Micro-interactions and Animation
 
 **Button delight**:
 ```css
@@ -104,7 +104,7 @@ Add personality and joy through these methods:
 **Success animations**:
 - Checkmark draw animation
 - Confetti burst for major achievements
-- Gentle scale + fade for confirmation
+- Gentle scale and fade for confirmation
 - Satisfying sound effects (subtle)
 
 **Hover surprises**:
@@ -133,7 +133,7 @@ Add personality and joy through these methods:
 "Inbox zero! You're crushing it today."
 ```
 
-**Playful labels & tooltips**:
+**Playful labels and tooltips**:
 ```
 "Delete"
 "Send to void" (for playful brand)
@@ -142,9 +142,9 @@ Add personality and joy through these methods:
 "Rescue me" (tooltip)
 ```
 
-**IMPORTANT**: Match copy personality to brand. Banks shouldn't be wacky, but they can be warm.
+**IMPORTANT**: Match copy personality to brand. Banks should not be wacky, but they can be warm.
 
-### Illustrations & Visual Personality
+### Illustrations and Visual Personality
 
 **Custom illustrations**:
 - Empty state illustrations (not stock icons)
@@ -154,7 +154,7 @@ Add personality and joy through these methods:
 
 **Icon personality**:
 - Custom icon set matching brand personality
-- Animated icons (subtle motion on hover/click)
+- Animated icons (subtle motion on hover or click)
 - Illustrative icons (more detailed than generic)
 - Consistent style across all icons
 
@@ -179,11 +179,11 @@ Add personality and joy through these methods:
 - Haptic feedback on mobile
 - Optional sound effect
 
-**Progress & achievements**:
+**Progress and achievements**:
 - Streak counters with celebratory milestones
 - Progress bars that "celebrate" at 100%
 - Badge unlocks with animation
-- Playful stats ("You're on fire! 5 days in a row")
+- Playful stats ("You are on fire! 5 days in a row")
 
 **Form interactions**:
 - Input fields that animate on focus
@@ -197,16 +197,16 @@ Add personality and joy through these methods:
 - Notification sounds (distinctive but not annoying)
 - Success sounds (satisfying "ding")
 - Error sounds (empathetic, not harsh)
-- Typing sounds for chat/messaging
+- Typing sounds for chat or messaging
 - Ambient background audio (very subtle)
 
 **IMPORTANT**:
 - Respect system sound settings
 - Provide mute option
 - Keep volumes quiet (subtle cues, not alarms)
-- Don't play on every interaction (sound fatigue is real)
+- Do not play on every interaction (sound fatigue is real)
 
-### Easter Eggs & Hidden Delights
+### Easter Eggs and Hidden Delights
 
 **Discovery rewards**:
 - Konami code unlocks special theme
@@ -227,7 +227,7 @@ Add personality and joy through these methods:
 - Randomized variations (not same every time)
 - Progressive reveals with continued use
 
-### Loading & Waiting States
+### Loading and Waiting States
 
 **Make waiting engaging**:
 - Interesting loading messages that rotate
@@ -237,14 +237,14 @@ Add personality and joy through these methods:
 - Countdown with encouraging messages
 
 ```
-Loading messages — write ones specific to your product, not generic AI filler:
+Loading messages: write ones specific to your product, not generic AI filler:
 - "Crunching your latest numbers..."
 - "Syncing with your team's changes..."
 - "Preparing your dashboard..."
 - "Checking for updates since yesterday..."
 ```
 
-**WARNING**: Avoid cliched loading messages like "Herding pixels", "Teaching robots to dance", "Consulting the magic 8-ball", "Counting backwards from infinity". These are AI-slop copy — instantly recognizable as machine-generated. Write messages that are specific to what your product actually does.
+**WARNING**: Avoid cliched loading messages like "Herding pixels", "Teaching robots to dance", "Consulting the magic 8-ball", "Counting backwards from infinity". These are AI-slop copy: instantly recognizable as machine-generated. Write messages that are specific to what your product actually does.
 
 ### Celebration Moments
 
@@ -291,13 +291,13 @@ Loading messages — write ones specific to your product, not generic AI filler:
 
 ## Verify Delight Quality
 
-Test that delight actually delights:
+Test that delight actually delights.
 
 - **User reactions**: Do users smile? Share screenshots?
-- **Doesn't annoy**: Still pleasant after 100th time?
-- **Doesn't block**: Can users opt out or skip?
+- **Does not annoy**: Still pleasant after 100th time?
+- **Does not block**: Can users opt out or skip?
 - **Performant**: No jank, no slowdown
 - **Appropriate**: Matches brand and context
 - **Accessible**: Works with reduced motion, screen readers
 
-Remember: Delight is the difference between a tool and an experience. Add personality, surprise users positively, and create moments worth sharing. But always respect usability - delight should enhance, never obstruct.
+Remember: Delight is the difference between a tool and an experience. Add personality, surprise users positively, and create moments worth sharing. But always respect usability: delight should enhance, never obstruct.
