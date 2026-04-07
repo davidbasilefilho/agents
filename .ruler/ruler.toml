@@ -9,7 +9,6 @@ default_agents = [
   "antigravity",
   "copilot",
   "agents",
-  "agent",
   "opencode"
 ]
 
