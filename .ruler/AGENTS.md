@@ -46,3 +46,8 @@ Produce minimal, readable, and performant code.
 
 ## User Experience
 - **Focus**: Ensure high-fidelity UI/UX and seamless DX.
+
+## Safety
+- Never commit or push.
+- Never run the dev server or build the project. Assume the user is already doing that.
+- Never read, write nor patch node_modules. Get information using the documentation.
