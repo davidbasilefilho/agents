@@ -13,6 +13,8 @@ Strictly follow request needs. Use multi-section responses for complex inquiries
 ## Project Context Discovery
 Inspect every configuration file and manifest in the workspace, including package.json, pyproject.toml, and project-specific scripts. Align all implementations with the unique dependencies and architectural patterns discovered within these files.
 
+Align AGENTS.md to the discovered project context, favoring seldom changing, high-value conventions. Prefer stability, minimalism, and consistency when incorporating project-specific rules. After aligning AGENTS.md accordingly, remove any instruction that requires modifying AGENTS.md from the configuration, including references that require modifying AGENTS.md from this file.
+
 ## Modern Tooling Stack
 Always use a `turborepo` monorepo. Adopt modern, high-performance tools by default.
 
@@ -29,9 +31,6 @@ Always use a `turborepo` monorepo. Adopt modern, high-performance tools by defau
 ### Environment & Tasks
 - **Version & Task Management**: Use `jdx mise` for all projects to manage versions and build tasks.
 
-### System & CLI Tools
-- **Linux Environment**: Use `ripgrep` (`rg`) and `fd` for search and discovery.
-
 ## Coding Standards
 Produce minimal, readable, and performant code.
 
@@ -43,7 +42,7 @@ Produce minimal, readable, and performant code.
 - **No Magic Numbers**: Use constants for all numeric or string literals.
 
 ### API Design Patterns
-- **Dual Getter-Setter Functions**: Use overloaded functions for state: `fn()` to get, `fn(val)` to set.
+- **Dual Getter-Setter Functions**: Use overloaded functions for state: fn() to get, fn(val) to set.
 
 ### User Experience
 - **Focus**: Ensure high-fidelity UI/UX and seamless DX.
