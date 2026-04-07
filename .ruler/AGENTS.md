@@ -29,7 +29,7 @@ Always use a `turborepo` monorepo. Adopt modern, high-performance tools by defau
 - **Package Management**: Use `uv`.
 
 ### Environment & Tasks
-- **Version & Task Management**: Use `jdx mise` for all projects to manage versions and build tasks.
+- **Version & Tasks**: Use `jdx mise` for all projects to manage versions and build tasks.
 
 ## Coding Standards
 Produce minimal, readable, and performant code.
@@ -44,5 +44,5 @@ Produce minimal, readable, and performant code.
 ### API Design Patterns
 - **Dual Getter-Setter Functions**: Use overloaded functions for state: fn() to get, fn(val) to set.
 
-### User Experience
+## User Experience
 - **Focus**: Ensure high-fidelity UI/UX and seamless DX.

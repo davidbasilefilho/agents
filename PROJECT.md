@@ -9,12 +9,13 @@ This repository provides a centralized, version-controlled configuration for AI 
 ## Stack
 
 - **Runtime**: [Bun](https://bun.sh)
+- **Package Manager**: [uv](https://github.com/astral-sh/uv) for Python
 - **Config Manager**: [`@intellectronica/ruler`](https://github.com/intellectronica/ruler)
 
 ## Setup
 
 ```bash
-bun add -g @intellectronica/ruler
+bun install
 ```
 
 ## Apply Configurations
@@ -22,28 +23,14 @@ bun add -g @intellectronica/ruler
 Apply globally:
 
 ```bash
-ruler apply
+bun run ruler apply
 ```
 
 Apply per-repo:
 
 ```bash
-ruler apply --local-only
+bun run ruler apply --local-only
 ```
-
-## Per-Repo Override
-
-Contributors can override global settings by adding files to their repo root:
-
-```bash
-# .claude.md      - Claude override
-# .zed.md         - Zed override
-# .gemini.md      - Gemini override
-# .antigravity.md - Antigravity override
-# .copilot.md     - Copilot override
-```
-
-The local file takes precedence over the global config.
 
 ## Update Config
 
