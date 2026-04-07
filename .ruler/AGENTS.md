@@ -47,6 +47,47 @@ Produce minimal, readable, and performant code.
 ## User Experience
 - **Focus**: Ensure high-fidelity UI/UX and seamless DX.
 
+## Testing
+
+Reference: Bun test documentation via context7 (search "bun test")
+
+### Test File Naming
+
+Test files colocate with source using the `.test.ts` suffix.
+
+```
+src/utils/format.ts        →  src/utils/format.test.ts
+src/api/users route.ts    →  src/api/users route.test.ts
+```
+
+### Test Structure
+
+Use `describe` to group related tests and `test` for individual cases. The `expect` API provides assertion methods like `toBe`, `toEqual`, `toHaveBeenCalled`, and `expect.any()`.
+
+### Lifecycle Hooks
+
+Setup and teardown hooks run around tests: `beforeAll`, `afterAll`, `beforeEach`, `afterEach`.
+
+### Test Modifiers
+
+Control test execution with modifiers from `bun:test`:
+
+- `test.skip` — mark unimplemented or temporarily broken tests
+- `test.todo` — track planned tests; run with `bun test --todo` to find passing ones
+- `test.only` — run only this test; use with `bun test --only`
+- `test.if` — conditional execution based on platform or environment
+
+### Timeout and Retry
+
+Set custom timeout for slow operations as the second argument. Flaky tests can retry automatically with `{ retry: 3 }`.
+
+### Coverage Expectations
+
+Tests should cover basic behavior and edge cases. No minimum enforcement.
+
+- **Basic behavior**: Happy path, typical inputs, expected outputs
+- **Edge cases**: Empty values, null/undefined, boundary conditions, error paths
+
 ## Safety
 - Never commit or push.
 - Never run the dev server or build the project. Assume the user is already doing that.
