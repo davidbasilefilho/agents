@@ -24,9 +24,10 @@ For agent-specific instructions, see [INSTALL.md](INSTALL.md).
 
 ## For Agents
 
-Read the raw installation guide:
 
 ```
+Install this shared AI agent configuration.
+Read the raw installation guide:
 https://raw.githubusercontent.com/davidbasilefilho/agents/main/INSTALL.md
 ```
 
