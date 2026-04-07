@@ -27,7 +27,7 @@ curl -L https://github.com/davidbasilefilho/agents/archive/main.tar.gz | tar -xz
 New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.config\ruler" | Out-Null
 $tempFile = "$env:TEMP\agents.tar.gz"
 Invoke-WebRequest -Uri "https://github.com/davidbasilefilho/agents/archive/main.tar.gz" -OutFile $tempFile
-tar -xzf $tempFile -C "$env:USERPROFILE\.config\ruler" --strip-components=1 --include="*/.ruler/*"
+tar -xzf $tempFile -C "$env:USERPROFILE\.config\ruler" --strip-components=2 --include="*/.ruler/*"
 Remove-Item $tempFile -Force
 ```
 
@@ -173,7 +173,7 @@ Forcefully download the latest .ruler/ from GitHub (overwrites existing files).
 <summary><strong>Linux / macOS</strong></summary>
 
 ```bash
-rm -rf ~/.config/ruler/.ruler
+rm -rf ~/.config/ruler
 curl -L https://github.com/davidbasilefilho/agents/archive/main.tar.gz | tar -xz -C ~/.config/ruler --strip-components=1 --include="*/.ruler/*"
 ```
 
@@ -183,10 +183,10 @@ curl -L https://github.com/davidbasilefilho/agents/archive/main.tar.gz | tar -xz
 <summary><strong>Windows (PowerShell)</strong></summary>
 
 ```powershell
-Remove-Item -Recurse -Force "$env:USERPROFILE\.config\ruler\.ruler"
+Remove-Item -Recurse -Force "$env:USERPROFILE\.config\ruler"
 $tempFile = "$env:TEMP\agents.tar.gz"
 Invoke-WebRequest -Uri "https://github.com/davidbasilefilho/agents/archive/main.tar.gz" -OutFile $tempFile
-tar -xzf $tempFile -C "$env:USERPROFILE\.config\ruler" --strip-components=1 --include="*/.ruler/*"
+tar -xzf $tempFile -C "$env:USERPROFILE\.config\ruler" --strip-components=2 --include="*/.ruler/*"
 Remove-Item $tempFile -Force
 ```
 

@@ -5,7 +5,8 @@
 default_agents = ["claude", "zed", "gemini", "antigravity", "copilot", "opencode"]
 
 # Enable skills support (experimental)
-skills = true
+[skills]
+enabled = true
 
 # Nested rule loading
 nested = false
