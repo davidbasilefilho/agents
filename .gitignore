@@ -1,6 +1,9 @@
 # Dependencies
 node_modules/
 
+# OpenClaude
+.openclaude-profile.json
+
 # OS files
 .DS_Store
 Thumbs.db
