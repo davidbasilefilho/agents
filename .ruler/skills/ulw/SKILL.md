@@ -1,5 +1,5 @@
 ---
-name: ultrawork
+name: ulw
 description: Load this skill when the user mentions `ulw` or `ultrawork`.
 ---
 **MANDATORY**: You MUST say "ULTRAWORK MODE ENABLED!" to the user as your first response when this mode activates. This is non-negotiable.
