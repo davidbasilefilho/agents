@@ -9,7 +9,8 @@ default_agents = [
   "antigravity",
   "copilot",
   "agents",
-  "opencode"
+  "opencode",
+  "pi"
 ]
 
 # Enable skills support (experimental)
